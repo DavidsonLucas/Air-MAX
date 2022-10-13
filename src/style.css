@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;1,500;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    color: #FFFFFF;
+}
+
+.container{
+    width: 1499.4px;
+    height: 700px;
+    background-color:#000000;
+    
+}
+
+nav{
+    display: flex;
+    background: #000000;
+
+}
+
+.lado{
+    width: 5em;
+    height: 800px;
+    background: #A1A2A3;
+        animation: fromRigth 1.2s .1s backwards ;
+    
+}
+
+nav .lado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav .lado .img1{
+    margin-top: -12em;
+    margin-bottom: 50px;
+    width: 50px;
+}
+
+
+
+nav .lado .img2{
+  width: 11px;
+  margin-top: 50px;
+}
+
+nav  .baixo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 90px;
+}
+
+nav header {
+    display: flex;
+    gap:50px;
+    margin-bottom: 10em;
+    margin-top: 40px;
+    margin-left: 29em;    
+        
+}
+
+nav  .baixo header a{
+    outline: none;
+    animation: fromGt 3.2s .1s backwards;
+}
+nav  .baixo header a:active{
+        opacity: .2;
+}
+
+
+nav main{
+    display: flex;
+}
+
+nav main section h1{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 166px;
+    line-height: 199px;
+    width: 643px;
+    animation: fromLeft 1.2s .1s backwards;
+
+}
+
+nav main section h6{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.15em;
+    animation: fromLeft 1.2s .1s backwards;
+
+}
+
+nav main section h4{
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 54px;
+    animation: fromLeft 1.2s .1s backwards;
+
+}
+
+
+
+
+
+nav main section p{
+    width: 510px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;    
+    opacity: .8;
+
+    margin-bottom: 30px;
+    animation: fromLeft 1.2s .1s backwards;
+
+}
+
+nav main section button{
+    width: 120px;
+    height: 38px;
+    background: #A1A2A3;
+    border-radius: 10px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    cursor: pointer;
+    animation: somapr 4.2s .1s backwards;
+}
+
+nav main section button:hover{
+    background: #bfc6cc;
+}
+
+nav main section button:active{
+        opacity: .2;
+}
+
+
+
+nav main .img3{
+    width: 615.92px;
+height: 568.38px;
+position: relative;
+top:-10px;
+right: 10px;
+animation: somapr 4.2s .1s backwards;
+}
+
+
+@keyframes somapr{
+    from{
+        opacity: 0;
+        transform: rotateX(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes fromLeft{
+    from{
+        opacity: 0;
+        transform: translateY(-49px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromRigth{
+    from{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes fromGt{
+    from{
+        opacity: 0;
+        transform: translatex(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@media only screen and (max-width:790px) {
+        .container{
+            max-width: 43.3em;
+        }
+
+     nav .lado{
+            display: none;
+        }
+
+        nav header{
+            margin-left: 3em;
+        }
+        nav .baixo main{
+             display: flex;
+            flex-direction: column;
+            gap: 23em;
+        }
+        nav .baixo main section{
+            margin-top: 70px;
+       }
+
+        nav .baixo main section h1{
+            font-size: 55.3px;
+        }
+
+        nav .baixo main section h4{
+            margin-top: 25px;
+        }
+
+
+        nav .baixo main section p{
+
+            margin-top: 20px;
+        
+        }
+
+        nav .baixo main section button{
+            margin-top: 30px;
+        }
+
+
+        
+        nav  .baixo main img{
+            width: 430px;
+            height: 290px;
+            margin-bottom: 7em;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    
+}
