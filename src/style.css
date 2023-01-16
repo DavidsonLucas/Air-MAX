@@ -68,6 +68,16 @@ nav header {
 nav  .baixo header a{
     outline: none;
     animation: fromGt 3.2s .1s backwards;
+    text-align: center;
+}
+nav  .baixo header a:hover{
+border: 1px solid red;
+width:  8rem;
+background-color: #e7466e;
+border-radius: 30px;
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+
 }
 nav  .baixo header a:active{
         opacity: .2;
@@ -82,7 +92,7 @@ nav main section h1{
     font-family: 'Barlow';
     font-style: italic;
     font-weight: 900;
-    font-size: 166px;
+    font-size: 131px;
     line-height: 199px;
     width: 643px;
     animation: fromLeft 1.2s .1s backwards;
