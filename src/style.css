@@ -92,7 +92,7 @@ nav main section h1{
     font-family: 'Barlow';
     font-style: italic;
     font-weight: 900;
-    font-size: 131px;
+    font-size: 100px;
     line-height: 199px;
     width: 643px;
     animation: fromLeft 1.2s .1s backwards;
@@ -165,11 +165,11 @@ nav main section button:active{
 
 
 nav main .img3{
-    width: 615.92px;
-height: 568.38px;
+    width: 500px;
+height: 498.38px;
 position: relative;
-top:-10px;
-right: 10px;
+top:-4px;
+right: 4px;
 animation: somapr 4.2s .1s backwards;
 }
 
